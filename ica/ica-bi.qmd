@@ -1,5 +1,16 @@
 ---
-title: "Bivariate Viz"
+title: "Bivariate"
+author: "Annabelle Sommers"
+editor: visual
 ---
+```{r}
+survey <- read.csv("https://hash-mac.github.io/stat112site-s25/data/survey.csv")
+names(survey)
+nrow(survey)
+ncol(survey)
+ggplot(survey, aes(x = fav_temp_c)) +
+      geom_density()
+ggplot(survey, aes(x = fav_temp_c)) +
+      geom_bar()
 
-Use this file for practice with the **bivariate viz** in-class activity.  Refer to the class website for details.
+```
